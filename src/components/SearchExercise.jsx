@@ -21,8 +21,6 @@ const SearchExercise = ({ setExercises, bodyPart, setBodyPart }) => {
     fetchExerciseData();
   }, []);
 
-  console.log(bodyParts);
-
   const handleSubmit = async () => {
     if (search) {
       const exerciseData = await fetchData(BASE_URL, options);
