@@ -8,7 +8,7 @@ import RightArrowIcon from "../assets/icons/right-arrow.png";
 import LeftArrowIcon from "../assets/icons/left-arrow.png";
 import ExerciseCard from "./ExerciseCard";
 
-let LeftArrow = () => {
+/* let LeftArrow = () => {
   //const { scrollPrev } = React.useContext(VisibilityContext);
   const { isFirstItemVisible, scrollPrev } =
     React.useContext(VisibilityContext);
@@ -28,9 +28,9 @@ let RightArrow = () => {
       <img src={RightArrowIcon} alt="right-arrow" />
     </Typography>
   );
-};
+}; */
 
-/* function LeftArrow() {
+function LeftArrow() {
   const { isFirstItemVisible, scrollPrev } =
     React.useContext(VisibilityContext);
 
@@ -43,9 +43,9 @@ let RightArrow = () => {
       <img src={LeftArrowIcon} alt="right-arrow" />
     </button>
   );
-} */
+}
 
-/* function RightArrow() {
+function RightArrow() {
   const { isLastItemVisible, scrollNext } = React.useContext(VisibilityContext);
 
   return (
@@ -57,11 +57,11 @@ let RightArrow = () => {
       <img src={RightArrowIcon} alt="right-arrow" />
     </button>
   );
-} */
+}
 
 const HorizontalScrollbar = ({ data, bodyPart, setBodyPart, isBodyParts }) => {
   return (
-    <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
+    <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow} data={data}>
       {data.map((item) => (
         <Box key={item.id} itemId={item.id} title={item.id}>
           {isBodyParts ? (
