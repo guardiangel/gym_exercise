@@ -77,3 +77,7 @@ ExerciseVideo: Play the video content.
 ![Alt text](image-4.png)
 SimilarExercise: Display the same target or same equipment group
 ![Alt text](image-5.png)
+
+question(2023-08-04):
+1.The arrows in the HorizontalScrollbar doesn't work...
+2.The layout doesn't look pretty
