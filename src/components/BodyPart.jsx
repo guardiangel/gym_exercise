@@ -6,7 +6,7 @@ const BodyPart = ({ item, bodyPart, setBodyPart }) => {
   return (
     <Stack
       type="button"
-      alignItems="center"
+      alignItems="flex-start"
       justifyContent="center"
       className="bodyPart-card"
       sx={
@@ -15,7 +15,7 @@ const BodyPart = ({ item, bodyPart, setBodyPart }) => {
               borderTop: "4px solid #FF2625",
               background: "#fff",
               borderBottomLeftRadius: "20px",
-              width: "270px",
+              width: "150px",
               height: "282px",
               cursor: "pointer",
               gap: "47px",
@@ -23,7 +23,7 @@ const BodyPart = ({ item, bodyPart, setBodyPart }) => {
           : {
               background: "#fff",
               borderBottomLeftRadius: "20px",
-              width: "270px",
+              width: "150px",
               height: "282px",
               cursor: "pointer",
               gap: "47px",
@@ -31,7 +31,7 @@ const BodyPart = ({ item, bodyPart, setBodyPart }) => {
       }
       onClick={() => {
         setBodyPart(item);
-        window.scrollTo({ top: 18000, left: 100, behavior: "smooth" });
+        window.scrollTo({ top: 1800, left: 100, behavior: "smooth" });
       }}
     >
       <img
